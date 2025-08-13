@@ -144,8 +144,7 @@
 </br>
 
 ## 🏛️ 서비스 아키텍쳐 
-| <img width="320" src="https://github.com/user-attachments/assets/c1c6ce9d-09e5-4d25-bd58-eeb9954bfe0b" />
- | <img width="320" src="https://github.com/user-attachments/assets/7f757283-c5c0-43e4-99e8-7d1daeead292" /> |
+| <img width="480" src="https://github.com/user-attachments/assets/c1c6ce9d-09e5-4d25-bd58-eeb9954bfe0b" /> | <img width="480" src="https://github.com/user-attachments/assets/7f757283-c5c0-43e4-99e8-7d1daeead292" /> |
 | --- | --- |
 | 아키텍쳐 | ERD |
 
