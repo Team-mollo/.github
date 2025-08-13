@@ -1,12 +1,160 @@
-## Hi there 👋
+## ☘️ 몰로 일기
+> 지금 이 순간을 기록하고 폴라로이드 사진과 함께 간직해봐요!
 
-<!--
+![몰로 배너](https://github.com/user-attachments/assets/a4a3d9fd-6670-41b2-a82a-08b701b4625b)
 
-**Here are some ideas to get you started:**
+## 📖 서비스 소개
+하루를 돌아보며, 무엇을 했는지 쉽게 떠오르지 않던 적 있지 않나요?</br>
+몰로에서는 소중한 순간들을 틈틈이 기록하고, 쌓인 순간들로 나만의 하루 이야기를 작성할 수 있어요.</br>
+완성된 일기는 하루를 담은 폴라로이드 사진으로 몰로가 간직해줍니다.
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+</br>
+
+## ✨ 서비스 기능
+
+### [회원기능]
+
+| <img src="https://github.com/user-attachments/assets/0def62c9-0e06-429e-ad36-ce272dac50d0" width="160"/> | <img src="https://github.com/user-attachments/assets/b9376098-490d-41ff-834d-3e6414ba73db" width="160"/> |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| 로그인                                                                                                     | 로그아웃 및 탈퇴                                                                                             |
+
+**OAuth 기반 로그인**
+
+- 사용자의 세션이 만료된 경우 로그인 화면으로 이동하며 카카오 혹은 애플 로그인 버튼을 터치하여 로그인이 가능합니다.
+
+**로그아웃**
+
+- 로그아웃이 완료되면 FlutterSecureStorage 내 저장된 계정 정보(AccessToken, RefreshToken)이 삭제되고 로그인 페이지로 이동합니다.
+
+**회원탈퇴**
+
+- 회원 탈퇴를 하게되면 해당 유저의 모든 정보가 사용자의 디바이스 및 서버(서비스 서버, OAuth 서버)에서 삭제되고 로그인 페이지로 이동합니다.
+
+</br>
+
+### [메모 기능]
+
+| <img src="https://github.com/user-attachments/assets/b6ad9650-5634-4853-8c73-ba42cd221cc6" width="160"/> |
+| --- | 
+| 메모 기능 |
+
+- 앱을 열면, 지금 이 순간을 빠르게 기록할 수 있는 공간이 펼쳐집니다.
+- 쌓인 기록들은 일기 작성 시에 확인할 수 있습니다.
+- 터치를 하면 작성한 메모 내용을 삭제 할 수 있습니다.
+
+</br>
+
+
+
+### [일기 작성]
+
+|<img src="https://github.com/user-attachments/assets/31888210-f267-405c-b976-eace63166a41" width="160"/> | <img src="https://github.com/user-attachments/assets/019d487c-eb19-4c14-97d5-19529e04be79" width="160"/> | 
+| --- | --- | 
+| 일기 작성 1번 페이지 | 일기 작성 2번 페이지 |
+
+- 일기 작성은 총 두개의 페이지를 통해 진행됩니다.
+
+**첫번째 페이지**
+- 일기 제목을 필수로 입력하며, 태그 및 친구를 선택적으로 추가할 수 있습니다.
+- 사진을 첨부하여 폴라로이드 카드로 만들 수 있습니다.
+- 일기를 작성하는 날짜를 변경할 수 있습니다.
+
+**두번째 페이지**
+- 일기 내용을 작성합니다.
+- 일기 내용 작성 간에 메모 페이지에서 작성환 메모들을 확인할 수 있습니다.
+
+### [일기 조회]
+
+
+| <img src="https://github.com/user-attachments/assets/3c6c5a42-10bb-46c0-a966-f4fc31bf2ff7" width="160"/> | <img src="https://github.com/user-attachments/assets/c365940a-4673-4fcd-9330-fb338948a8f0" width="160"/> | <img src="https://github.com/user-attachments/assets/524c3077-18ab-4f6f-ba6e-37dd8d673ac9" width="160"/> |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| 일기 목록 조회                                                                                                 | 일기 폴라로이드                                                                                                 | 일기 내용                                                                                                    |
+
+**일기 목록 조회**
+- 작성된 일기 목록들을 월 단위로 조회 할 수 있으며, 오름차순 및 내림차순 정렬이 가능합니다.
+
+**일기 폴라로이드**
+- 일기 목록에서 일기를 클릭하면 폴라이로이드 사진과 함께 일기 정보를 확인할 수 있습니다.
+- 뒷면 보기를 터치하면 친구와 태그 정보를 확인할 수 있습니다.
+
+**일기 내용**
+- 폴라로이드 화면에서 오른쪽으로 스와이프 하면 일기 내용을 확인할 수 있습니다.
+
+
+
+### [친구 및 태그]
+
+| <img src="https://github.com/user-attachments/assets/10b54b4d-16f5-4d14-92b5-bf0ef541b25a" width="160"/> | <img src="https://github.com/user-attachments/assets/23073fc2-639c-4c70-b499-dc599d605f16" width="160"/> | <img src="https://github.com/user-attachments/assets/2f697d8f-4f53-452e-9118-62d36f761e19" width="160"/> |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| 친구 관리                                                                                                    | 태그 관리                                                                                                    | 연락처 불러오기                                                                                               |
+
+### [글자 스타일 관리]
+| <img src="https://github.com/user-attachments/assets/551b1dff-bb8d-402f-aede-5450b6afe3b1" width="160"/> |
+| -------------------------------------------------------------------------------------------------------- |
+| 글자 스타일 관리                                                                                             |
+
+- 폰트와 크기를 선택해 글자 스타일을 설정할 수 있습니다.
+- 현재 6가지의 폰트를 지원하고 있습니다.
+
+
+### [일기 공유]
+
+| <img src="https://github.com/user-attachments/assets/307c91f3-f826-4a69-a2d5-6e51017c8d0f" width="160"/> | <img src="https://github.com/user-attachments/assets/56b94942-c4c5-4d01-8d62-115e247c0d4d" width="160"/> | <img src="https://github.com/user-attachments/assets/f7ed39ef-108d-4709-834d-2bfb299c9b56" width="160"/> | <img src="https://github.com/user-attachments/assets/869da958-cd3a-4d6c-8a5a-c0495d0dd2fd" width="160"/> |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| 이미지 선택                                                                                                   | 배경 선택                                                                                                    | 추가 정보                                                                                                    | 공유할 사진                                                                                                   |
+
+
+**이미지 선택**
+- 폴라로이드에 들어갈 이미지를 선택할 수 있습니다.
+
+**배경 선택**
+- 여러가지의 배경 중 하나를 선택할 수 있습니다.
+- 현재는 5가지의 배경을 지원하고 있습니다.
+
+**추가 정보**
+- 태그와 친구 정보를 포함할지 선택할 수 있습니다.
+
+**공유할 사진**
+- 사용자가 앞선 과정들을 통해 선택한 요소들을 포함하여 최종 이미지를 보여주고 다운받거나 공유 할 수 있습니다.
+ 
+### [일기 검색]
+
+| <img src="https://github.com/user-attachments/assets/a0ad4744-957d-4fdf-bf42-6f4d98e6fcad" width="160"/> | <img src="https://github.com/user-attachments/assets/9b52205e-120f-4641-a4c3-2abbaaea0f3e" width="160"/> | <img src="https://github.com/user-attachments/assets/34c9f97e-9178-4575-944b-6c070ad798f0" width="160"/> |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| 기본 검색                                                                                                    | 태그 및 친구 검색                                                                                               | 검색 결과                                                                                                    |
+
+**기본 검색**
+- 일기 내용을 기반으로 검색을 진행합니다.
+
+**태그 및 친구 검색**
+- 태그 혹은 친구를 기준으로 검색합니다.
+- 여러 친구 및 태그 조합으로 검색이 가능합니다.
+
+**검색 결과**
+- 검색 결과를 커서 기반의 페이지네이션으로 보여줍니다.
+
+
+## ⚒️ 기술 스택
+- **Framework**: `Flutter`, `Spring Boot`
+- **Language**: `Java`, `Dart`
+- **Database**: `MySQL`, `Redis`
+- **Container&Deploy**: `Docker`, `Github Actions`
+- **Monitoring**: `Loki`, `Prometheus`, `Grafana`
+
+</br>
+
+## 🏛️ 서비스 아키텍쳐 
+| | |
+| --- | --- |
+| 아키텍쳐 | ERD |
+
+</br>
+
+## 🧑🏻‍💻 팀원 구성
+| ✨최민수 | 김희진 |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/a4d37556-d21d-40b6-95fc-f17df8d2e05a" width="200"/> | <img src="https://github.com/user-attachments/assets/9489e917-c744-4f26-80c8-e077b76e0e15" width="200"/>
+| [@minnnisu](https://github.com/minnnisu) | [@gmlwls768](https://github.com/gmlwls768) | 
+| 프로젝트 리더</br>프론트엔드 개발 | 백엔드 개발 | 
+
+</br>
